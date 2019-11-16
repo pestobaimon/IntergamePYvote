@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route('/vote')
 def vote():
-    client = pymongo.MongoClient("mongodb+srv://katsumon:115245@cluster0-iygzc.mongodb.net/test?retryWrites=true&w=majority")
+    client = pymongo.MongoClient("")
     db=client['uniqcodes']
     name_code = request.args.get('id').split(',')
     getname = name_code[0]

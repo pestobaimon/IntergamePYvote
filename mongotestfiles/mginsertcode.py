@@ -1,5 +1,5 @@
 import pymongo
-client = pymongo.MongoClient("mongodb+srv://katsumon:115245@cluster0-iygzc.mongodb.net/test?retryWrites=true&w=majority")
+client = pymongo.MongoClient("")
 db=client['uniqcodes']
 
 file = open("1000_unique_codes.csv",'r')
